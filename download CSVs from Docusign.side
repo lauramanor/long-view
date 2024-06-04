@@ -1,0 +1,107 @@
+{
+  "id": "3c26ece7-a8d3-4afc-ad9d-6e309eb646b8",
+  "version": "2.0",
+  "name": "download CSVs from Docusign",
+  "url": "https://app.docusign.com/",
+  "tests": [{
+    "id": "45718f9c-b05a-4fd6-9cab-9a7a4b0c7ec4",
+    "name": "download?",
+    "commands": [{
+      "id": "42293066-4c2e-48b5-849a-9ac533822ede",
+      "comment": "",
+      "command": "open",
+      "target": "https://app.docusign.com/documents?folder=c8220f29-ba70-445c-a0f7-2f6bd4fba0af",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45d10b46-a4ca-463d-81a3-9b94b30b7d70",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-1obf64m:nth-child(2) .css-19n39r2",
+      "targets": [
+        ["css=.css-1obf64m:nth-child(2) .css-19n39r2", "css:finder"],
+        ["xpath=(//button[@type='button'])[36]", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div[3]/div/table/tbody/div[2]/tr/td[6]/span/span/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74469fd0-9f7f-4a23-b949-8389fd135e5a",
+      "comment": "open first dropdown",
+      "command": "click",
+      "target": "css=.css-1xasier:nth-child(8) .css-xnsvr3",
+      "targets": [
+        ["css=.css-1xasier:nth-child(8) .css-xnsvr3", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div[3]/div/table/tbody/div[2]/tr/td[6]/span/span/div/div/div[2]/ul/li[8]/button/span", "xpath:idRelative"],
+        ["xpath=//li[8]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e4b6c2e-45c8-4be0-9f4d-8a69a92a88e6",
+      "comment": "open first envelope data",
+      "command": "click",
+      "target": "css=div:nth-child(1) > .css-hntme",
+      "targets": [
+        ["css=div:nth-child(1) > .css-hntme", "css:finder"],
+        ["xpath=//div[@id='ModalContainer']/div[2]/div[2]/div/div/div[4]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/formdata/80cea54b-dd77-444f-b836-1f96ec1d86a9/please-docu-sign-long-view-contract-and-forms-for-2023-24')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa525364-351a-494c-9e10-d8e81819b49b",
+      "comment": "download first",
+      "command": "click",
+      "target": "css=svg:nth-child(2) > path",
+      "targets": [
+        ["css=svg:nth-child(2) > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "514b5ca6-ab48-44fd-9f29-51ac74729ef3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-1obf64m:nth-child(3) .css-19n39r2",
+      "targets": [
+        ["css=.css-1obf64m:nth-child(3) .css-19n39r2", "css:finder"],
+        ["xpath=(//button[@type='button'])[38]", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div[3]/div/table/tbody/div[3]/tr/td[6]/span/span/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/tr/td[6]/span/span/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cfadf3e-c892-4131-95c0-71a1bdc4f080",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-1xasier:nth-child(8) .css-xnsvr3",
+      "targets": [
+        ["css=.css-1xasier:nth-child(8) .css-xnsvr3", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div[3]/div/table/tbody/div[3]/tr/td[6]/span/span/div/div/div[2]/ul/li[8]/button/span", "xpath:idRelative"],
+        ["xpath=//li[8]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a6079d5-2c0e-42da-975c-69f78fff8a7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > .css-hntme",
+      "targets": [
+        ["css=div:nth-child(1) > .css-hntme", "css:finder"],
+        ["xpath=//div[@id='ModalContainer']/div[2]/div[2]/div/div/div[4]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/formdata/ca466721-ae6f-4d30-9d15-91abd6de3a38/please-docu-sign-long-view-contract-and-forms-for-2023-24')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "472d1806-b4e5-48e6-b53b-6f3ed0bca38a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["45718f9c-b05a-4fd6-9cab-9a7a4b0c7ec4"]
+  }],
+  "urls": ["https://app.docusign.com/"],
+  "plugins": []
+}
